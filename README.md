@@ -26,7 +26,7 @@ For analyzing the fundamental of coporation,
   height="300"
 />
 <img
-  src=".\image\result3_AAPL.png"
+  src=".\image\result3_Apple.png"
   width="700"
   height="300"
 />
