@@ -1,32 +1,47 @@
-# Analysis-fiscal-statement-for-Investment
-For analyzing the fundamental of coporation, 
-- First, Crowling financial statements for 10years. 
-- Second, integrates data, which is a different form as each coporation. (include controlling missing data)
-- Third, Process data to derive the necessary information.
-
+# belly-button
 ***
-# Row Data
-- Scraping from *** website
+I build an interactive dashboard to explore the Belly Button Biodiversity datasetLinks to an external site, which catalogs the microbes that colonize human navels.
+
+The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
+
+# Process
+***
+
+1.Use the D3 library to read in samples.json from the URL.
+
+2.Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+- Use sample_values as the values for the bar chart.
+
+- Use otu_ids as the labels for the bar chart.
+
+- Use otu_labels as the hovertext for the chart.
+
+3.Create a bubble chart that displays each sample.
+
+- Use otu_ids for the x values.
+
+- Use sample_values for the y values.
+
+- Use sample_values for the marker size.
+
+- Use otu_ids for the marker colors.
+
+- Use otu_labels for the text values.
+
+4.Display the sample metadata, i.e., an individual's demographic information.
+
+5.Display each key-value pair from the metadata JSON object somewhere on the page.
+
+6.Update all the plots when a new sample is selected. The dashboard is shown as follows:
+
 <img
-  src=".\image\web.png"
-  width="500"
-  height="300"
+  src="./Images/dashbord2.png"
+  width="600"
+  height="400"
 />
 
-***
-# Result
 <img
-  src=".\image\result1_MDT.png"
-  width="700"
-  height="300"
-/>
-<img
-  src=".\image\result2_AAP.png"
-  width="700"
-  height="300"
-/>
-<img
-  src=".\image\result3_Apple.png"
-  width="700"
-  height="300"
+  src="./Images/dashboard1.png"
+  width="600"
+  height="250"
 />
